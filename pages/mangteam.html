@@ -175,7 +175,8 @@
 	// slide show
 		window.onload=function(){
 			var elem=document.getElementById("logo"); 
-
+			var elem2=document.getElementById("myNavs"); 
+			
 			var id=setInterval(frame,1);
 			var pos=1000;
 			function frame(){
@@ -185,6 +186,18 @@
 				{
 					pos--;
 					elem.style.left=pos+"px";
+				}
+			}
+
+			var id2=setInterval(frame2,1);
+			var pos2=-320;
+			function frame2(){
+				if(pos2==680){
+					clearInterval(id2);
+				}else 
+				{
+					pos2++;
+					elem2.style.left=pos2+"px";
 				}
 			}
 		}
