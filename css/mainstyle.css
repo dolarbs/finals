@@ -374,7 +374,7 @@ footer{background-color: #000521;
 
 	.mgt{padding: 48px;}
 	#teams{background-color: white;}
-
+	#teams a{text-decoration: none;}
 	.newButton{
 		background-color:white;
 		height: 30px;
